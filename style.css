@@ -2,13 +2,13 @@
   --background: #141b1e;
   --background-light: #232a2d;
   --foreground: #dadada;
-  --light-grey: #b3b9b8;
+  --magenta: #c47fd5;
   --red: #e57474;
   --yellow: #e5c76b;
   --green: #8ccf7e;
-  --cyan: #6cbfbf;
   --blue: #67b0e8;
-  --magenta: #c47fd5;
+
+  --fonts: 'Ubuntu', Arial, Helvetica, sans-serif;
 
   font-size: 16px;
 }
@@ -23,7 +23,7 @@
 
 html {
   height: 100%;
-  background-color: var(--background-light);
+  background-color: var(--background);
 }
 
 body {
@@ -32,8 +32,8 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--background);
+  font-family: var(--fonts);
+  background-color: var(--background-light);
   color: var(--foreground);
 }
 
@@ -54,6 +54,7 @@ header {
   display: grid;
   grid-template-rows: repeat(2,min-content);
   gap: 1rem;
+  border-bottom: 1px solid var(--foreground);
 }
 
 header .static {
@@ -65,6 +66,7 @@ header .static {
 
 header form {
   display: flex;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -77,8 +79,13 @@ header input {
   border: 0;
   border-radius: 10px;
   color: var(--foreground);
-  background-color: var(--background-light);
-  box-shadow: 5px 5px 10px black;
+  background-color: var(--background);
+  box-shadow: -5px 5px 10px black;
+}
+
+header .name {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 header .actions {
@@ -123,6 +130,14 @@ header .action-btns button{
   grid-template-rows: 0.5fr 1fr 1fr 2fr; /*2fr is dynamic whitespace*/
   gap: 2rem;
   align-items: center;
+  font-weight: bold;
+  background-color: var(--magenta);
+  color: var(--background);
+}
+
+.dash .title {
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 .dash .title,
@@ -138,21 +153,24 @@ header .action-btns button{
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   gap: 1rem;
+  margin-left: 1rem;
 }
 
 .dash .help {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
+  margin-left: 1rem;
   margin-top: 2rem;
 }
 
 .dash img {
   display: inline-block;
+  filter: invert(7%) sepia(7%) saturate(2129%) hue-rotate(153deg) brightness(95%) contrast(93%);
 }
 
 .dash .dash-icon img {
-  height: 2rem;
+  height: 2.5rem;
   width: auto;
 }
 
@@ -173,15 +191,37 @@ article .card-wrapper {
   gap: 1rem;
 }
 
+article .card-border {
+  border-radius: 0.5rem;
+  box-shadow: -2.5px 2.5px 5px black;
+}
+
 article .card {
   display: grid;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--background-light);
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: var(--background);
+}
+
+article .card h5 {
+  font-size: 1.1rem;
 }
 
 article .card .card-btns {
   justify-self: end;
+}
+
+/* Mock User Coloring */
+/* ------------------ */
+
+article .card-border:nth-child(1){border-left: 0.5rem solid var(--blue);}
+article .card-border:nth-child(2){border-left: 0.5rem solid var(--green);}
+article .card-border:nth-child(3){border-left: 0.5rem solid var(--yellow);}
+article .card-border:nth-child(4){border-left: 0.5rem solid var(--red);}
+article .card-border:nth-child(5){border-left: 0.5rem solid var(--green);}
+article .card-border:nth-child(6){border-left: 0.5rem solid var(--blue);
 }
 
 /* Sidebar */
@@ -193,47 +233,77 @@ article .card .card-btns {
   display: grid;
   grid-template-rows: repeat(2,min-content);
   gap: 1rem;
+  font-size: 0.8rem;
 }
 
 .sidebar h4 {
   margin-bottom: 1rem;
 }
 
-.sidebar .card {
+.sidebar h6 {
+  font-size: 1rem;
+}
+
+.sidebar .card-wrapper {
+  border-radius: 1em;
+  padding: 0 2rem;
+  background-color: var(--background);
+  box-shadow: -2.5px 2.5px 5px black;
+}
+
+.sidebar .announcements .card {
+  padding: 1rem 0;
   display: grid;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--background-light);
+  background-color: var(--background);
+  border-bottom: 1px solid var(--foreground);
 }
 
 .sidebar .trending .card {
+  padding: 1rem 0;
+  font-size: 1rem;
   display: grid;
   grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--foreground);
 }
 
-/* Other */
-/* ----- */
+.sidebar .card:last-child {
+  border-bottom: 0;
+}
+
+/* Other & Multiples */
+/* ----------------- */
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 button {
+  font-family: var(--fonts);
+  font-weight: bold;
   padding: 8px;
   border: 0;
   border-radius: 16px;
   color: var(--foreground);
-  background-color: var(--background-light);
-  box-shadow: 5px 5px 10px black;
+  background-color: var(--background);
+  box-shadow: -2.5px 2.5px 5px black;
   transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: var(--background-light);
-  box-shadow: 10px 10px 20px black;
-  transform: translate(-2px, -4px);
+  background-color: var(--background);
+  box-shadow: -5px 5px 10px black;
+  transform: translate(1.5px, -3px);
   transition: 0.3s ease;
 }
 
 button.icon-btn img {
   height: 1.5rem;
   width: auto;
+  filter: invert(100%) sepia(0%) saturate(651%) hue-rotate(211deg) brightness(85%) contrast(101%);
 }
 
 button.icon-btn {
