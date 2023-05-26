@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
-<desc>Created with Fabric.js 5.2.4</desc>
-<defs>
-</defs>
-<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
-<g transform="matrix(1 0 0 1 540 540)" id="683f55ea-0218-4fc6-a306-276243a1a244"  >
-<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
-</g>
-<g transform="matrix(1 0 0 1 540 540)" id="dcd8f7dc-350b-45f8-8245-27bad4e4bf9d"  >
-</g>
-<g transform="matrix(18.8 0 0 18.8 513.07 638.58)" id="e22bdecf-6674-4089-9e2a-2110bd581a7a"  >
-<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-11.89, -12)" d="M 7 5 C 7 3.89543 7.89543 3 9 3 C 10.1046 3 11 3.89543 11 5 C 11 5.74028 10.5978 6.38663 10 6.73244 L 10 14.0396 L 11.7915 14.0396 C 12.8961 14.0396 13.7915 13.1441 13.7915 12.0396 L 13.7915 10.7838 C 13.1823 10.4411 12.7708 9.78837 12.7708 9.03955 C 12.7708 7.93498 13.6662 7.03955 14.7708 7.03955 C 15.8753 7.03955 16.7708 7.93498 16.7708 9.03955 C 16.7708 9.77123 16.3778 10.4111 15.7915 10.7598 L 15.7915 12.0396 C 15.7915 14.2487 14.0006 16.0396 11.7915 16.0396 L 10 16.0396 L 10 17.2676 C 10.5978 17.6134 11 18.2597 11 19 C 11 20.1046 10.1046 21 9 21 C 7.89543 21 7 20.1046 7 19 C 7 18.2597 7.4022 17.6134 8 17.2676 L 8 6.73244 C 7.4022 6.38663 7 5.74028 7 5 Z" stroke-linecap="round" />
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 3c0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.323.861 2.433 2.05 2.832.168 4.295-2.021 4.764-4.998 5.391-1.709.36-3.642.775-5.052 2.085v-7.492c1.163-.413 2-1.511 2-2.816 0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.305.837 2.403 2 2.816v12.367c-1.163.414-2 1.512-2 2.817 0 1.657 1.343 3 3 3s3-1.343 3-3c0-1.295-.824-2.388-1.973-2.808.27-3.922 2.57-4.408 5.437-5.012 3.038-.64 6.774-1.442 6.579-7.377 1.141-.425 1.957-1.514 1.957-2.803zm-16.8 0c0-.993.807-1.8 1.8-1.8s1.8.807 1.8 1.8-.807 1.8-1.8 1.8-1.8-.807-1.8-1.8zm3.6 18c0 .993-.807 1.8-1.8 1.8s-1.8-.807-1.8-1.8.807-1.8 1.8-1.8 1.8.807 1.8 1.8zm10.2-16.2c-.993 0-1.8-.807-1.8-1.8s.807-1.8 1.8-1.8 1.8.807 1.8 1.8-.807 1.8-1.8 1.8z"/></svg>

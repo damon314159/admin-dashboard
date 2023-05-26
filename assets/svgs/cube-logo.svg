@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
-<desc>Created with Fabric.js 5.2.4</desc>
-<defs>
-</defs>
-<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
-<g transform="matrix(1 0 0 1 540 540)" id="683f55ea-0218-4fc6-a306-276243a1a244"  >
-<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
-</g>
-<g transform="matrix(1 0 0 1 540 540)" id="dcd8f7dc-350b-45f8-8245-27bad4e4bf9d"  >
-</g>
-<g transform="matrix(-0.11 0 0 -0.11 500.59 650.54)" id="path20"  >
-<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-1732.96, 867.09)" d="M 0 0 L 1732.959 -1000.537 L 1732.959 -2868.164 L 0 -1867.627 Z M 1732.959 1133.96 L 3350.391 200.098 L 1732.959 -733.716 L 115.527 200.098 Z M -173.291 -2034.424 L 1675.195 -3101.66 C 1693.066 -3111.9629999999997 1713.013 -3117.0899999999997 1732.9589999999998 -3117.0899999999997 C 1752.9049999999997 -3117.0899999999997 1772.8519999999999 -3111.9629999999997 1790.7229999999997 -3101.66 L 3639.209 -2034.4239999999998 C 3674.951 -2013.7699999999998 3696.973 -1975.5859999999998 3696.973 -1934.3259999999998 L 3696.973 200.098 C 3696.973 241.382 3674.951 279.517 3639.209 300.146 L 1790.723 1367.407 C 1754.98 1388.086 1710.9379999999999 1388.086 1675.195 1367.407 L -173.291 300.146 C -209.058 279.517 -231.055 241.382 -231.055 200.098 L -231.055 -1934.326 C -231.055 -1975.586 -209.058 -2013.77 -173.291 -2034.424" stroke-linecap="round" />
-</g>
-</svg>
+<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m3.514 6.636c-.317.179-.514.519-.514.887v8.95c0 .37.197.708.514.887 1.597.901 6.456 3.639 8.005 4.512.152.085.319.128.487.128.164 0 .328-.041.477-.123 1.549-.855 6.39-3.523 7.994-4.408.323-.177.523-.519.523-.891v-9.055c0-.368-.197-.708-.515-.887-1.595-.899-6.444-3.632-7.999-4.508-.151-.085-.319-.128-.486-.128-.168 0-.335.043-.486.128-1.555.876-6.405 3.609-8 4.508zm15.986 2.115v7.525l-6.75 3.722v-7.578zm-14.264-1.344 6.764-3.813 6.801 3.834-6.801 3.716z" fill-rule="nonzero"/></svg>
