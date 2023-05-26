@@ -1,0 +1,252 @@
+:root {
+  --background: #141b1e;
+  --background-light: #232a2d;
+  --foreground: #dadada;
+  --light-grey: #b3b9b8;
+  --red: #e57474;
+  --yellow: #e5c76b;
+  --green: #8ccf7e;
+  --cyan: #6cbfbf;
+  --blue: #67b0e8;
+  --magenta: #c47fd5;
+
+  font-size: 16px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Main */
+/* ---- */
+
+html {
+  height: 100%;
+  background-color: var(--background-light);
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: minmax(min-content, 250px) 1fr minmax(min-content, 300px);
+  gap: 1rem;
+}
+
+/* Header */
+/* ------ */
+
+header {
+  grid-area: 1/2/2/4;
+  padding: 2rem 4rem 1rem;
+  display: grid;
+  grid-template-rows: repeat(2,min-content);
+  gap: 1rem;
+}
+
+header .static {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, max-content);
+  gap: 1rem;
+  align-items: center;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+}
+
+header input {
+  display: block;
+  padding: 1rem;
+  height: 2rem;
+  width: 70%;
+  max-width: 600px;
+  border: 0;
+  border-radius: 10px;
+  color: var(--foreground);
+  background-color: var(--background-light);
+  box-shadow: 5px 5px 10px black;
+}
+
+header .actions {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 20rem);
+  gap: 1rem;
+  align-items: center;
+}
+
+header .actions .user-info {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+}
+
+header .user-info .large-icon img {
+  margin-right: 1rem;
+  height: 4rem;
+  width: auto;
+}
+
+header .actions .action-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+header .action-btns button{
+  width: 100%;
+  max-height: 2.5rem;
+}
+
+
+/* Dashboard */
+/* --------- */
+
+.dash {
+  grid-area: 1/1/3/2;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 2fr; /*2fr is dynamic whitespace*/
+  gap: 2rem;
+  align-items: center;
+}
+
+.dash .title,
+.dash .nav > div,
+.dash .help > div {
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  align-items: center;
+  gap: 1rem;
+}
+
+.dash .nav {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.dash .help {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.dash img {
+  display: inline-block;
+}
+
+.dash .dash-icon img {
+  height: 2rem;
+  width: auto;
+}
+
+/* Article */
+/* ------- */
+
+article {
+  grid-area: 2/2/3/3;
+}
+
+article h4 {
+  margin-bottom: 1rem;
+}
+
+article .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+article .card {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-light);
+}
+
+article .card .card-btns {
+  justify-self: end;
+}
+
+/* Sidebar */
+/* ------- */
+
+.sidebar {
+  grid-area: 2/3/3/4;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-rows: repeat(2,min-content);
+  gap: 1rem;
+}
+
+.sidebar h4 {
+  margin-bottom: 1rem;
+}
+
+.sidebar .card {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-light);
+}
+
+.sidebar .trending .card {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+}
+
+/* Other */
+/* ----- */
+
+button {
+  padding: 8px;
+  border: 0;
+  border-radius: 16px;
+  color: var(--foreground);
+  background-color: var(--background-light);
+  box-shadow: 5px 5px 10px black;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--background-light);
+  box-shadow: 10px 10px 20px black;
+  transform: translate(-2px, -4px);
+  transition: 0.3s ease;
+}
+
+button.icon-btn img {
+  height: 1.5rem;
+  width: auto;
+}
+
+button.icon-btn {
+  background-color: #ffffff00;
+  border: 0;
+  box-shadow: none;
+}
+
+.user-icon img {
+  height: 2rem;
+  width: auto;
+}
+
+.inline-div {
+  display: inline;
+}
