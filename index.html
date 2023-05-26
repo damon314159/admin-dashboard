@@ -13,13 +13,20 @@
     <header>
       <div class="static">
         <div class="searchbar">
-          <!-- form i guess? -->
+          <form id="search-bar" action="" role="search">
+            <button type="submit" class="icon-btn">
+              <img src="./assets/svgs/search.svg" alt="Search">
+            </button>
+            <input type="search" id="search-bar" name="search-bar" aria-label="Search through site content">
+          </form>
         </div>
-        <div class="notify-btn">
-          <button class="notification-toggle"></button>
+        <div class="notify-btn inline-div">
+          <button class="notification-toggle icon-btn">
+            <img src="./assets/svgs/notify-bell.svg" alt="Notification toggle">
+          </button>
         </div>
-        <div class="profile-icon user-icon">
-          <!-- make an icon -->
+        <div class="profile-icon user-icon inline-div">
+          <img src="./assets/svgs/profile-icon-purple.svg" alt="User icon">
         </div>
         <div class="name">
           <span>Name here</span>
@@ -28,13 +35,13 @@
 
       <div class="actions">
         <div class="user-info">
-          <div class="profile-icon user-icon large-icon">
-            <!-- make an icon -->
+          <div class="profile-icon user-icon large-icon inline-div">
+            <img src="./assets/svgs/profile-icon-purple.svg" alt="User icon">
           </div>
-          <p class="greeting">Hi there,</p>
-          <div class="name">
+          <div class="greeting-wrapper inline-div">
+            <span class="greeting">Hi there, <br></span>
             <span>Name here</span>
-            <span>@handle</span>
+            <span>(@handle)</span>
           </div>
         </div>
 
@@ -48,49 +55,69 @@
 
     <div class="dash">
       <div class="title">
-        <div class="dash-icon"></div>
-        <h3 class="dashboard">Dashboard</h3>
+        <div class="dash-icon inline-div">
+          <img src="./assets/svgs/cube-logo.svg" alt="Dash logo">
+        </div>
+        <span class="dashboard">Dashboard</span>
       </div>
 
       <div class="nav">
         <div class="home">
-          <div class="home-icon"></div>
-          <h5>Home</h5>
+          <div class="home-icon inline-div">
+            <img src="./assets/svgs/home.svg" alt="Home icon">
+          </div>
+        <span>Home</span>
         </div>
         <div class="profile">
-          <div class="profile-icon"></div>
-          <h5>Profile</h5>
+          <div class="profile-icon inline-div">
+            <img src="./assets/svgs/profile.svg" alt="Profile icon">
+          </div>
+          <span>Profile</span>
         </div>
         <div class="message">
-          <div class="message-icon"></div>
-          <h5>Message</h5>
+          <div class="message-icon inline-div">
+            <img src="./assets/svgs/messages.svg" alt="Messages icon">
+          </div>
+          <span>Message</span>
         </div>
         <div class="history">
-          <div class="history-icon"></div>
-          <h5>History</h5>
+          <div class="history-icon inline-div">
+            <img src="./assets/svgs/history.svg" alt="History icon">
+          </div>
+          <span>History</span>
         </div>
         <div class="tasks">
-          <div class="tasks-icon"></div>
-          <h5>Tasks</h5>
+          <div class="tasks-icon inline-div">
+            <img src="./assets/svgs/files.svg" alt="Tasks icon">
+          </div>
+          <span>Tasks</span>
         </div>
         <div class="community">
-          <div class="community-icon"></div>
-          <h5>Community</h5>
+          <div class="community-icon inline-div">
+            <img src="./assets/svgs/people.svg" alt="Community icon">
+          </div>
+          <span>Community</span>
         </div>
       </div>
 
       <div class="help">
         <div class="settings">
-          <div class="settings-icon"></div>
-          <h5>Settings</h5>
+          <div class="settings-icon inline-div">
+            <img src="./assets/svgs/settings.svg" alt="Settings icon">
+          </div>
+          <span>Settings</span>
         </div>
         <div class="support">
-          <div class="support-icon"></div>
-          <h5>Support</h5>
+          <div class="support-icon inline-div">
+            <img src="./assets/svgs/help.svg" alt="Support icon">
+          </div>
+          <span>Support</span>
         </div>
         <div class="privacy">
-          <div class="privacy-icon"></div>
-          <h5>Privacy</h5>
+          <div class="privacy-icon inline-div">
+            <img src="./assets/svgs/security.svg" alt="Privacy icon">
+          </div>
+          <span>Privacy</span>
         </div>
       </div>
 
@@ -103,9 +130,15 @@
         <h5 class="title">Super Cool Project</h5>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus. Etiam non tempor ante. Donec in erat purus. Quisque sed vehicula augue.</p>
         <div class="card-btns">
-          <button class="favorite"></button>
-          <button class="see-more"></button>
-          <button class="fork"></button>
+          <button class="favorite icon-btn">
+            <img src="./assets/svgs/add-favorite.svg" alt="Favorite icon">
+          </button>
+          <button class="see-more icon-btn">
+            <img src="./assets/svgs/eye.svg" alt="See-more icon">
+          </button>
+          <button class="fork icon-btn">
+            <img src="./assets/svgs/git-fork.svg" alt="Fork icon">
+          </button>
         </div>
       </div>
 
@@ -113,9 +146,15 @@
         <h5 class="title">Less Cool Project</h5>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus. Etiam non tempor ante. Donec in erat purus. Quisque sed vehicula augue.</p>
         <div class="card-btns">
-          <button class="favorite"></button>
-          <button class="see-more"></button>
-          <button class="fork"></button>
+          <button class="favorite icon-btn">
+            <img src="./assets/svgs/add-favorite.svg" alt="Favorite icon">
+          </button>
+          <button class="see-more icon-btn">
+            <img src="./assets/svgs/eye.svg" alt="See-more icon">
+          </button>
+          <button class="fork icon-btn">
+            <img src="./assets/svgs/git-fork.svg" alt="Fork icon">
+          </button>
         </div>
       </div>
 
@@ -123,9 +162,15 @@
         <h5 class="title">The Everest of Apps</h5>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus. Etiam non tempor ante. Donec in erat purus. Quisque sed vehicula augue.</p>
         <div class="card-btns">
-          <button class="favorite"></button>
-          <button class="see-more"></button>
-          <button class="fork"></button>
+          <button class="favorite icon-btn">
+            <img src="./assets/svgs/add-favorite.svg" alt="Favorite icon">
+          </button>
+          <button class="see-more icon-btn">
+            <img src="./assets/svgs/eye.svg" alt="See-more icon">
+          </button>
+          <button class="fork icon-btn">
+            <img src="./assets/svgs/git-fork.svg" alt="Fork icon">
+          </button>
         </div>
       </div>
 
@@ -133,9 +178,15 @@
         <h5 class="title">Easy Peasy App</h5>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus. Etiam non tempor ante. Donec in erat purus. Quisque sed vehicula augue.</p>
         <div class="card-btns">
-          <button class="favorite"></button>
-          <button class="see-more"></button>
-          <button class="fork"></button>
+          <button class="favorite icon-btn">
+            <img src="./assets/svgs/add-favorite.svg" alt="Favorite icon">
+          </button>
+          <button class="see-more icon-btn">
+            <img src="./assets/svgs/eye.svg" alt="See-more icon">
+          </button>
+          <button class="fork icon-btn">
+            <img src="./assets/svgs/git-fork.svg" alt="Fork icon">
+          </button>
         </div>
       </div>
 
@@ -143,9 +194,15 @@
         <h5 class="title">Ad Blocker</h5>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus. Etiam non tempor ante. Donec in erat purus. Quisque sed vehicula augue.</p>
         <div class="card-btns">
-          <button class="favorite"></button>
-          <button class="see-more"></button>
-          <button class="fork"></button>
+          <button class="favorite icon-btn">
+            <img src="./assets/svgs/add-favorite.svg" alt="Favorite icon">
+          </button>
+          <button class="see-more icon-btn">
+            <img src="./assets/svgs/eye.svg" alt="See-more icon">
+          </button>
+          <button class="fork icon-btn">
+            <img src="./assets/svgs/git-fork.svg" alt="Fork icon">
+          </button>
         </div>
       </div>
 
@@ -153,9 +210,15 @@
         <h5 class="title">Fun Side Project</h5>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus. Etiam non tempor ante. Donec in erat purus. Quisque sed vehicula augue.</p>
         <div class="card-btns">
-          <button class="favorite"></button>
-          <button class="see-more"></button>
-          <button class="fork"></button>
+          <button class="favorite icon-btn">
+            <img src="./assets/svgs/add-favorite.svg" alt="Favorite icon">
+          </button>
+          <button class="see-more icon-btn">
+            <img src="./assets/svgs/eye.svg" alt="See-more icon">
+          </button>
+          <button class="fork icon-btn">
+            <img src="./assets/svgs/git-fork.svg" alt="Fork icon">
+          </button>
         </div>
       </div>
     </article>
@@ -164,51 +227,51 @@
       <div class="announcements">
         <div class="card">
           <h6>Site Maintenance</h6>
-          <p class="message"></p>
+          <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus.</p>
         </div>
         <div class="card">
           <h6>Community Share Day</h6>
-          <p class="message"></p>
+          <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus.</p>
         </div>
         <div class="card">
           <h6>Updated Privacy Policy</h6>
-          <p class="message"></p>
+          <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque placerat cursus.</p>
         </div>
       </div>
 
       <div class="trending">
         <div class="trending-1">
-          <div class="profile-icon">
-            <!-- make an icon -->
+          <div class="profile-icon user-icon inline-div">
+            <img src="./assets/svgs/profile-icon-blue.svg" alt="User icon">
           </div>
-          <h6 class="user-handle">
+          <span class="user-handle">
             @tegan
-          </h6>
-          <p class="project-name">
+          </span>
+          <span class="project-name">
             World Peace Builder
-          </p>
+          </span>
         </div>
         <div class="trending-2">
-          <div class="profile-icon">
-            <!-- make an icon -->
+          <div class="profile-icon user-icon inline-div">
+            <img src="./assets/svgs/profile-icon-green.svg" alt="User icon">
           </div>
-          <h6 class="user-handle">
+          <span class="user-handle">
             @alex
-          </h6>
-          <p class="project-name">
+          </span>
+          <span class="project-name">
             No Traffic Maker
-          </p>
+          </span>
         </div>
         <div class="trending-3">
-          <div class="profile-icon">
-            <!-- make an icon -->
+          <div class="profile-icon user-icon inline-div">
+            <img src="./assets/svgs/profile-icon-red.svg" alt="User icon">
           </div>
-          <h6 class="user-handle">
+          <span class="user-handle">
             @kendall
-          </h6>
-          <p class="project-name">
+          </span>
+          <span class="project-name">
             Life Changing App
-          </p>
+          </span>
         </div>
       </div>
     </div>
